@@ -1,0 +1,69 @@
+.page-header {
+  background-color: #ffffff;
+  padding: 18px;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+
+  h1 {
+    font-size: 1.6rem;
+    color: #0f172a;
+  }
+}
+
+.posts-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background-color: #ffffff;
+  border-left: 6px solid #3b82f6;
+  border-radius: 8px;
+  padding: 16px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  h2 {
+    font-size: 1.2rem;
+    color: #1e293b;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #475569;
+  }
+
+  .delete-btn {
+    align-self: flex-start;
+    background: transparent;
+    border: 2px solid #ef4444;
+    color: #ef4444;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .delete-btn:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .post-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .content {
+      max-width: 75%;
+    }
+  }
+}
