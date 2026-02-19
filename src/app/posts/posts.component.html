@@ -3,14 +3,21 @@
 </header>
 
 <main class="posts-container">
-  <article class="post-card" *ngFor="let post of posts; let i = index">
-    <div class="posts-content">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.description }}</p>
-    </div>
+  <article class="posts-card">
+    <h2>My BLOG</h2>
+    <p>This is the description of the first post.</p>
+    <button>Delete</button>
+  </article>
 
-    <button class="delete-btn" (click)="deletePost(i)">
-      Delete
-    </button>
+  <article class="posts-card">
+    <h2>POST</h2>
+    <p>This is another post description.</p>
+    <button>Delete</button>
+  </article>
+
+  <article class="posts-card">
+    <h2>OTHOUGHTS</h2>
+    <p>This is another post description.</p>
+    <button>Delete</button>
   </article>
 </main>
